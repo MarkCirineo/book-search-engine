@@ -43,21 +43,21 @@ export const SAVE_BOOK = gql`
     }
 `;
 
-// export const REMOVE_BOOK = gql`
-//     mutation removeBook: async ($bookId: ID!) {
-//         removeBook(bookId: $bookId) {
-//             _id
-//             username
-//             email
-//             bookcount
-//             savedBooks {
-//                 bookeId
-//                 authors
-//                 description
-//                 title
-//                 image
-//                 link
-//             }
-//         }
-//     }
-// `;
+export const REMOVE_BOOK = gql`
+    mutation removeBook($bookId: ID!) {
+        removeBook(bookId: $bookId) {
+            _id
+            username
+            email
+            bookcount
+            savedBooks {
+                bookId
+                authors
+                description
+                title
+                image
+                link
+            }
+        }
+    }
+`;
