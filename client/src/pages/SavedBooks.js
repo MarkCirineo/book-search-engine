@@ -46,9 +46,12 @@ const SavedBooks = () => {
 
     try {
       // setUserData(updatedUser);
-      removeBook(bookId);
+      removeBook({
+        variables: { bookId }
+      });
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
+      window.location.replace('/saved')
     } catch (err) {
       console.error(err);
     }
