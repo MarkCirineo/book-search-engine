@@ -6,17 +6,25 @@
 The web app allows you to search for books that you would like to purchase. When you create an account you can save books to a list. You can view all you saved books and remove ones as you wish.
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
+- [Installation](#installation)
 - [License](#license)
 - [How To Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
-## Installation
-You can download the files from the GitHub repo.
 
 ## Usage
 You can visit the website [here](https://morning-dusk-09419.herokuapp.com/)
+
+![screenshot of the search page](./assets/images/searchpage.png)
+
+## Installation
+You can use the application through the link above or follow the instructions below to run the files locally.
+- Clone the repository to use the files
+- Set up the environment variables in a .env file
+- Run "npm i" in a terminal at the root directory level to install the dependencies (You need to have Node.js installed on your machine)
+- Run "npm run develop" in the terminal to run the application
+- Go to http://localhost:3000/ in your browser to use the application
 
 ## License
 MIT License
